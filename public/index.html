@@ -14,7 +14,8 @@
         </div>
     </div>
     <script>
-        const socket = new WebSocket('ws://' + window.location.hostname + ':' + (window.location.port || 3000));
+        const protocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
+        const socket = new WebSocket(protocol + '://' + window.location.host);
         const output = document.getElementById('output');
         const input = document.getElementById('command-input');
         let state = 'login';
