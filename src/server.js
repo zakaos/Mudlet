@@ -539,7 +539,7 @@ wss.on('connection', (ws) => {
                 state = 'CHOOSE_CLASS';
                 commands.sendTo(ws, `Choose discipline: {C}${Object.keys(CONFIG.CLASSES).join(', ')}{x}`);
             } else if (state === 'CHOOSE_CLASS') {
-                const choice = input.toLowerCase();
+                const choice = input.toLowerCase().trim();
                 if (CONFIG.CLASSES[choice]) {
                     const classData = CONFIG.CLASSES[choice];
                     let p = {
