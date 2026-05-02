@@ -738,5 +738,5 @@ setInterval(() => {
 }, 45000);
 
 loadData();
-app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 server.listen(PORT, '0.0.0.0', () => console.log(`Mudlet server running on port ${PORT}`));
