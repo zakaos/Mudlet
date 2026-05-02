@@ -1,0 +1,30 @@
+{
+  "id": "cloud_architect",
+  "name": "The Sentient Infrastructure",
+  "keywords": [
+    "infrastructure",
+    "sentient",
+    "cloud",
+    "boss"
+  ],
+  "description": "A massive, pulsating construct of fiber optic cables and glowing server racks. It governs all compute in this sector.",
+  "hp": 350,
+  "level": 12,
+  "damage": [
+    8,
+    14
+  ],
+  "isBoss": true,
+  "specialAttacks": [
+    { "name": "Auto-scaling Strike", "msg": "scales up its damage exponentially", "damage": [12, 18] },
+    { "name": "Serverless Burst", "msg": "triggers a cold start of pure pain", "damage": [15, 25] }
+  ],
+  "ai": [
+    { "type": "heal", "value": 50, "msg": "deploys a new regional cluster!" },
+    { "type": "buff_dmg", "value": 4, "msg": "provisions more compute resources!" }
+  ],
+  "drops": [
+    "dual_monitor",
+    "standing_desk_legs"
+  ]
+}

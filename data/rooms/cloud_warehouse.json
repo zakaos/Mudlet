@@ -1,0 +1,1 @@
+{"id": "cloud_warehouse", "name": "The Cloud Warehouse", "description": "An infinite expanse of virtual storage.", "exits": {"east": "server_room"}, "mobs": ["giant_packet"]}

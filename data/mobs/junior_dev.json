@@ -1,0 +1,24 @@
+{
+  "id": "junior_dev",
+  "name": "a confused junior dev",
+  "keywords": [
+    "dev",
+    "junior"
+  ],
+  "description": "He's just trying to find the exit. He looks like he hasn't slept in days.",
+  "hp": 25,
+  "level": 2,
+  "damage": [
+    2,
+    4
+  ],
+  "dialogue": [
+    "Do you know where the documentation is?",
+    "I just pushed to main. Was that wrong?",
+    "Can you help me with this merge conflict?"
+  ],
+  "isNpc": true,
+  "drops": [
+    "energy_drink"
+  ]
+}

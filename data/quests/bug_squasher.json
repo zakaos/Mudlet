@@ -1,0 +1,13 @@
+{
+  "id": "bug_squasher",
+  "name": "Bug Squasher",
+  "desc": "The lead developer is tired of all these bugs. Kill 3 bugs to help out.",
+  "type": "kill",
+  "targetId": "bug",
+  "required": 3,
+  "reward": {
+    "xp": 50,
+    "gold": 30,
+    "items": ["protein_bar"]
+  }
+}

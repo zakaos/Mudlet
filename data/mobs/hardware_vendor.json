@@ -1,0 +1,23 @@
+{
+  "id": "hardware_vendor",
+  "name": "The Hardware Vendor",
+  "keywords": [
+    "vendor",
+    "hardware"
+  ],
+  "description": "He sells various peripherals and components.",
+  "shop": [
+    "energy_drink",
+    "protein_bar",
+    "hoodie",
+    "blue_light_glasses",
+    "ergonomic_mouse",
+    "standing_desk_legs",
+    "compression_socks",
+    "developer_gloves",
+    "wrist_rest"
+  ],
+  "hp": 400,
+  "level": 10,
+  "isNpc": true
+  }

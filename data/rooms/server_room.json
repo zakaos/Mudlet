@@ -1,0 +1,6 @@
+{"id": "server_room", "name": "Server Room", "description": "Loud fans and blinking lights.", "exits": {"south": "breakroom", "east": "office", "west": "cloud_warehouse"}, "mobs": ["rogue_daemon"],
+"ambience": [
+  "The server fans kick into high gear, creating a deafening roar.",
+  "Blue status LEDs flicker rapidly on a nearby rack.",
+  "A cold blast of air from the AC unit hits you."
+]}

@@ -1,0 +1,17 @@
+{
+  "id": "keyboard",
+  "name": "a mechanical keyboard",
+  "keywords": [
+    "keyboard",
+    "mechanical",
+    "clicky"
+  ],
+  "description": "A high-performance keyboard with tactile switches.",
+  "type": "weapon",
+  "slot": "main_hand",
+  "damage": [
+    1,
+    4
+  ],
+  "price": 400
+}

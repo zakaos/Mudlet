@@ -1,0 +1,23 @@
+{
+  "id": "middle_manager",
+  "name": "a management layer glitch",
+  "keywords": [
+    "glitch",
+    "management",
+    "layer"
+  ],
+  "description": "A flickering distortion in the reality of the office. It emits a low-frequency hum that sounds like 'synergy'.",
+  "hp": 30,
+  "level": 5,
+  "damage": [
+    4,
+    7
+  ],
+  "ai": [
+    { "type": "drain_stamina", "value": 10, "msg": "triggers an unhandled 'sync' event!" },
+    { "type": "drain_mp", "value": 10, "msg": "demands a recursive status update!" }
+  ],
+  "drops": [
+    "gold_coin"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "outdated_docs",
+  "name": "a stack of outdated documentation",
+  "keywords": [
+    "docs",
+    "documentation"
+  ],
+  "description": "It refers to libraries that have been deprecated for a decade. It's surprisingly heavy.",
+  "hp": 60,
+  "level": 6,
+  "damage": [
+    5,
+    9
+  ],
+  "ai": [
+    { "type": "buff_dmg", "value": 3, "msg": "reveals a circular dependency!" }
+  ],
+  "drops": [
+    "wrist_rest"
+  ]
+}

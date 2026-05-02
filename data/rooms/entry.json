@@ -1,0 +1,6 @@
+{"id": "entry", "name": "Developer's Lounge", "description": "A sanctuary for weary creators, filled with the hum of high-end servers and the rich aroma of artisanal coffee.", "exits": {"north": "workshop"}, "mobs": ["npc_dev", "npc_designer"],
+"ambience": [
+  "The hum of the servers is almost hypnotic.",
+  "Someone just brewed a fresh pot of artisanal coffee.",
+  "A quiet conversation about design patterns drifts from a corner."
+]}

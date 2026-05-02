@@ -1,0 +1,18 @@
+{
+  "id": "npc_designer",
+  "name": "The Visionary Designer",
+  "keywords": [
+    "designer",
+    "visionary"
+  ],
+  "description": "Obsessed with perfect pixel alignment.",
+  "type": "mob",
+  "isNpc": true,
+  "dialogue": [
+    "Make it pop more!",
+    "Is that a 1px border on the button? Needs to be 2px.",
+    "User experience is everything.",
+    "I have a vision for this project."
+  ],
+  "hp": null
+}

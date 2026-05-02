@@ -1,0 +1,13 @@
+{
+  "id": "caffeine_run",
+  "name": "Caffeine Run",
+  "desc": "A developer is crashing. Retrieve an energy drink.",
+  "type": "fetch",
+  "targetId": "energy_drink",
+  "required": 1,
+  "reward": {
+    "xp": 30,
+    "gold": 20,
+    "items": ["gold_coin"]
+  }
+}

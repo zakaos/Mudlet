@@ -1,0 +1,31 @@
+{
+  "id": "legacy_code_monster",
+  "name": "The Legacy Code Monster",
+  "keywords": [
+    "legacy",
+    "code",
+    "monster"
+  ],
+  "description": "A terrifying mass of spaghetti code, undocumented functions, and deprecated libraries. It screams in COBOL.",
+  "hp": 200,
+  "level": 5,
+  "damage": [
+    4,
+    10
+  ],
+  "isBoss": true,
+  "specialAttacks": [
+    { "name": "Spaghetti Strike", "msg": "lashes out with a tangle of unreadable code", "damage": [8, 15] },
+    { "name": "Null Pointer Exception", "msg": "references a memory address that doesn't exist", "damage": [12, 20] },
+    { "name": "Deprecation Warning", "msg": "screams a warning about your outdated methods", "damage": [5, 8] }
+  ],
+  "ai": [
+    { "type": "heal", "value": 40, "msg": "refactors a deprecated library, gaining stability!" },
+    { "type": "drain_stamina", "value": 20, "msg": "buries you in documentation debt!" },
+    { "type": "buff_dmg", "value": 2, "msg": "optimizes its inner loops, becoming more efficient!" }
+  ],
+  "drops": [
+    "mechanical_keyboard_v2",
+    "energy_drink"
+  ]
+}

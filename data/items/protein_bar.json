@@ -1,0 +1,11 @@
+{
+  "id": "protein_bar",
+  "name": "a protein bar",
+  "keywords": ["protein", "bar", "food"],
+  "description": "It's dense, tastes like cardboard, and provides just enough fuel for the next sprint.",
+  "type": "consumable",
+  "effect": "food",
+  "value": 100,
+  "heal": [3, 6],
+  "price": 30
+}

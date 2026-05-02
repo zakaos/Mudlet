@@ -1,0 +1,22 @@
+{
+  "id": "brainstorming_spirit",
+  "name": "a brainstorming spirit",
+  "keywords": [
+    "spirit",
+    "brainstorming"
+  ],
+  "description": "A literal ghost of an idea that never made it to production.",
+  "hp": 12,
+  "level": 2,
+  "aggressive": true,
+  "damage": [
+    1,
+    3
+  ],
+  "ai": [
+    { "type": "drain_mp", "value": 5, "msg": "overwhelms you with half-baked ideas!" }
+  ],
+  "drops": [
+    "energy_drink"
+  ]
+}

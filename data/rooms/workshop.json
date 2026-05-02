@@ -1,0 +1,1 @@
+{"id": "workshop", "name": "The Workshop", "description": "A messy workspace covered in hardware parts and coffee stains.", "exits": {"south": "entry", "north": "coding_lab"}, "items": ["keyboard"], "mobs": ["bug"]}

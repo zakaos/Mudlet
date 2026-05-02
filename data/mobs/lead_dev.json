@@ -1,0 +1,14 @@
+{
+  "id": "lead_dev",
+  "name": "The Lead Developer",
+  "keywords": [
+    "lead",
+    "developer"
+  ],
+  "description": "A seasoned veteran ready to teach you the tricks of the trade.",
+  "isTrainer": true,
+  "givesQuest": "bug_squasher",
+  "hp": 400,
+  "level": 20,
+  "isNpc": true
+  }

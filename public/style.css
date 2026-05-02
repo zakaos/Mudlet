@@ -1,0 +1,64 @@
+/* Colorized output for the terminal console */
+body {
+    background-color: #0c0c0c;
+    color: #cccccc;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#game-container {
+    width: 90%;
+    max-width: 800px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #333;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#output {
+    flex-grow: 1;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+
+/* MudGrow-inspired ANSI color map for HTML output */
+.msg { color: #cccccc; }
+.red { color: #ff5555; }
+.green { color: #55ff55; }
+.yellow { color: #ffff55; }
+.blue { color: #5555ff; }
+.magenta { color: #ff55ff; }
+.cyan { color: #55ffff; }
+.bold { font-weight: bold; }
+
+#input-container {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+
+#prompt {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #55ff55;
+}
+
+#command-input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    color: #55ff55;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+}

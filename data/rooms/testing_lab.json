@@ -1,0 +1,1 @@
+{"id": "testing_lab", "name": "Testing Lab", "description": "A high-stakes arena where code goes to face its judgment.", "exits": {"north": "library"}, "mobs": ["legacy_code_monster"]}

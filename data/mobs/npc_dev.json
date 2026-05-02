@@ -1,0 +1,19 @@
+{
+  "id": "npc_dev",
+  "name": "The Senior Coder",
+  "keywords": [
+    "coder",
+    "senior"
+  ],
+  "description": "An exhausted coder with a flickering monitor.",
+  "type": "mob",
+  "isNpc": true,
+  "givesQuest": "caffeine_run",
+  "dialogue": [
+    "Have you tried turning it off and on again?",
+    "The code works on my machine.",
+    "Documentation? We don't do that here.",
+    "Only five more bugs to fix..."
+  ],
+  "hp": null
+}

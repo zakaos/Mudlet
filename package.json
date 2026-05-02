@@ -1,0 +1,15 @@
+{
+  "name": "mudlet",
+  "version": "1.0.0",
+  "description": "A lightweight, modular, and easy-to-host MUD engine for developers.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "ws": "^8.13.0"
+  }
+}

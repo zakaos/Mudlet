@@ -1,0 +1,11 @@
+{
+  "id": "energy_drink",
+  "name": "a chilled energy drink",
+  "keywords": ["energy", "drink", "can"],
+  "description": "A neon-colored liquid that promises infinite focus and zero sleep.",
+  "type": "consumable",
+  "effect": "drink",
+  "value": 100,
+  "heal": [3, 6],
+  "price": 25
+}

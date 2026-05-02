@@ -1,0 +1,1 @@
+{"id": "coding_lab", "name": "Coding Lab", "description": "Rows of state-of-the-art workstations stretch out into the darkness.", "exits": {"south": "workshop", "east": "breakroom"}, "mobs": ["lead_dev"]}

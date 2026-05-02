@@ -1,0 +1,19 @@
+{
+  "id": "bug",
+  "name": "a nasty software bug",
+  "keywords": [
+    "bug",
+    "software",
+    "nasty"
+  ],
+  "description": "It's small, annoying, and potentially system-breaking.",
+  "hp": 8,
+  "level": 1,
+  "damage": [
+    1,
+    2
+  ],
+  "drops": [
+    "energy_drink"
+  ]
+}

@@ -1,0 +1,10 @@
+# Ignore sensitive game data
+data/players/
+data/world_state.json
+data/bans.json
+
+# Ignore system/environment files
+node_modules/
+.env
+*.log
+.DS_Store

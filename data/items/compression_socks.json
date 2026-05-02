@@ -1,0 +1,13 @@
+{
+  "id": "compression_socks",
+  "name": "a pair of compression socks",
+  "keywords": [
+    "socks",
+    "compression"
+  ],
+  "description": "Keeps the blood flowing during those 12-hour coding sessions.",
+  "type": "armor",
+  "slot": "feet",
+  "ac": 1,
+  "price": 180
+}

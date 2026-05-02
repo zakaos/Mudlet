@@ -1,0 +1,13 @@
+{
+  "id": "ergonomic_chair",
+  "name": "an ergonomic chair",
+  "keywords": [
+    "chair",
+    "ergonomic"
+  ],
+  "description": "Saves your back during long sessions.",
+  "type": "armor",
+  "slot": "body",
+  "ac": 2,
+  "price": 1200
+}

@@ -1,0 +1,20 @@
+{
+  "id": "giant_packet",
+  "name": "a giant packet",
+  "keywords": [
+    "packet",
+    "giant"
+  ],
+  "description": "A massive chunk of data that is clogging the network.",
+  "hp": 40,
+  "level": 8,
+  "aggressive": true,
+  "damage": [
+    7,
+    12
+  ],
+  "drops": [
+    "energy_drink",
+    "mechanical_keyboard_v2"
+  ]
+}

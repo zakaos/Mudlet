@@ -1,0 +1,1 @@
+{"id": "office", "name": "Management Office", "description": "Surprisingly clean and quiet, with a single, perfectly centered stapler on the desk.", "exits": {"north": "meeting_room", "west": "server_room"}, "mobs": ["middle_manager"]}

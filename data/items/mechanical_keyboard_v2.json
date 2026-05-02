@@ -1,0 +1,16 @@
+{
+  "id": "mechanical_keyboard_v2",
+  "name": "a premium mechanical keyboard",
+  "keywords": [
+    "keyboard",
+    "premium"
+  ],
+  "description": "It has RGB lighting and clicky blue switches. It feels powerful.",
+  "type": "weapon",
+  "slot": "main_hand",
+  "damage": [
+    3,
+    6
+  ],
+  "price": 1500
+}

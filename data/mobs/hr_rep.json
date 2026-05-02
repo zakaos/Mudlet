@@ -1,0 +1,22 @@
+{
+  "id": "hr_rep",
+  "name": "a performance review wraith",
+  "keywords": [
+    "wraith",
+    "review",
+    "performance"
+  ],
+  "description": "A ghostly manifestation of corporate anxiety, clutching a spectral stack of negative feedback.",
+  "hp": 40,
+  "level": 4,
+  "damage": [
+    3,
+    6
+  ],
+  "ai": [
+    { "type": "drain_stamina", "value": 15, "msg": "emanates a field of 'synergistic' dread!" }
+  ],
+  "drops": [
+    "gold_coin"
+  ]
+}

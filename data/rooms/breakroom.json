@@ -1,0 +1,1 @@
+{"id": "breakroom", "name": "The Breakroom", "description": "An oasis of questionable snacks and lukewarm coffee.", "exits": {"west": "coding_lab", "north": "server_room"}, "mobs": ["hardware_vendor"]}

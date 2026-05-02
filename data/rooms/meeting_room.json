@@ -1,0 +1,1 @@
+{"id": "meeting_room", "name": "Meeting Room", "description": "Empty chairs and a whiteboard full of half-erased diagrams.", "exits": {"east": "library", "south": "office"}, "mobs": ["brainstorming_spirit"]}

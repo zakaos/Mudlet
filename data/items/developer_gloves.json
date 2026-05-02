@@ -1,0 +1,13 @@
+{
+  "id": "developer_gloves",
+  "name": "a pair of fingerless developer gloves",
+  "keywords": [
+    "gloves",
+    "fingerless"
+  ],
+  "description": "Stylish and functional. Your fingers feel nimble.",
+  "type": "armor",
+  "slot": "hands",
+  "ac": 1,
+  "price": 350
+}

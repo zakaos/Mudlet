@@ -1,0 +1,13 @@
+{
+  "id": "ergonomic_mouse",
+  "name": "an ergonomic mouse",
+  "keywords": [
+    "mouse",
+    "ergonomic"
+  ],
+  "description": "A vertical mouse designed to prevent carpal tunnel.",
+  "type": "armor",
+  "slot": "off_hand",
+  "ac": 1,
+  "price": 600
+}

@@ -1,0 +1,13 @@
+{
+  "id": "hoodie",
+  "name": "a faded grey hoodie",
+  "keywords": [
+    "hoodie",
+    "grey"
+  ],
+  "description": "The unofficial uniform of developers everywhere. Smells slightly of coffee.",
+  "type": "armor",
+  "slot": "body",
+  "ac": 1,
+  "price": 300
+}

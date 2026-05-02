@@ -1,0 +1,13 @@
+{
+  "id": "dual_monitor",
+  "name": "a dual monitor setup",
+  "keywords": [
+    "monitor",
+    "dual"
+  ],
+  "description": "Double the pixels, double the productivity.",
+  "type": "armor",
+  "slot": "head",
+  "ac": 2,
+  "price": 2500
+}

@@ -1,0 +1,13 @@
+{
+  "id": "wrist_rest",
+  "name": "a plush gel wrist rest",
+  "keywords": [
+    "rest",
+    "wrist"
+  ],
+  "description": "Provides much-needed support for your typing arms.",
+  "type": "armor",
+  "slot": "arms",
+  "ac": 1,
+  "price": 200
+}

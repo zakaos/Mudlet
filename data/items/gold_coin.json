@@ -1,0 +1,11 @@
+{
+  "id": "gold_coin",
+  "name": "a shiny gold coin",
+  "keywords": [
+    "coin",
+    "gold"
+  ],
+  "description": "It has the symbol of a bitcoin, but feels physical.",
+  "type": "item",
+  "price": 100
+}

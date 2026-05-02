@@ -1,0 +1,13 @@
+{
+  "id": "standing_desk_legs",
+  "name": "a pair of heavy-duty desk legs",
+  "keywords": [
+    "legs",
+    "desk"
+  ],
+  "description": "Sturdy steel legs that could support the weight of a thousand bugs.",
+  "type": "armor",
+  "slot": "legs",
+  "ac": 2,
+  "price": 1800
+}

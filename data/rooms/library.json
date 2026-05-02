@@ -1,0 +1,1 @@
+{"id": "library", "name": "Documentation Library", "description": "An ancient, labyrinthine archive of forgotten documentation.", "exits": {"south": "testing_lab", "west": "meeting_room"}, "mobs": []}

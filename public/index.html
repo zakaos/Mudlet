@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Where Developers Dwell</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="output"></div>
+        <div id="input-container">
+            <span id="prompt">></span>
+            <input type="text" id="command-input" autofocus autocomplete="off">
+        </div>
+    </div>
+    <script>
+        const socket = new WebSocket('ws://' + window.location.hostname + ':' + (window.location.port || 3000));
+        const output = document.getElementById('output');
+        const input = document.getElementById('command-input');
+        let state = 'login';
+        let username = '';
+
+        function formatColor(text) {
+            return text
+                .replace(/\{R\}/g, '<span class="red">')
+                .replace(/\{G\}/g, '<span class="green">')
+                .replace(/\{Y\}/g, '<span class="yellow">')
+                .replace(/\{B\}/g, '<span class="blue">')
+                .replace(/\{M\}/g, '<span class="magenta">')
+                .replace(/\{C\}/g, '<span class="cyan">')
+                .replace(/\{bold\}/g, '<span class="bold">')
+                .replace(/\{x\}/g, '</span>');
+        }
+
+        socket.onmessage = (e) => {
+            const msg = JSON.parse(e.data);
+            output.innerHTML += `<div>${formatColor(msg.content)}</div>`;
+            output.scrollTop = output.scrollHeight;
+            if (msg.content === 'Enter password:' || msg.content === 'New player. Enter a password:') {
+                state = 'password';
+            } else if (msg.content === 'Welcome back.' || msg.content === 'Account created.') {
+                state = 'playing';
+            }
+        };
+
+        input.onkeydown = (e) => {
+            if (e.key === 'Enter') {
+                const val = input.value;
+                input.value = '';
+                if (state === 'login') {
+                    username = val;
+                    socket.send(JSON.stringify({ type: 'login', username }));
+                } else if (state === 'password') {
+                    socket.send(JSON.stringify({ type: 'password', content: val }));
+                } else {
+                    socket.send(JSON.stringify({ type: 'command', content: val }));
+                }
+            }
+        };
+
+        output.innerHTML += '<div>Enter username:</div>';
+    </script>
+</body>
+</html>

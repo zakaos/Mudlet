@@ -1,0 +1,13 @@
+{
+  "id": "blue_light_glasses",
+  "name": "a pair of blue-light glasses",
+  "keywords": [
+    "glasses",
+    "blue-light"
+  ],
+  "description": "Protects your eyes from the relentless glow of the monitors.",
+  "type": "armor",
+  "slot": "head",
+  "ac": 1,
+  "price": 250
+}
