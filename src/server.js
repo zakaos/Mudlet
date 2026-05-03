@@ -136,15 +136,19 @@ function sanitizePlayer(player) {
 
 async function loadPlayer(username) {
     const pPath = path.join(CONFIG.PLAYER_DATA_DIR, `${username}.json`);
+    console.log(`DEBUG: Attempting to load player '${username}' from: ${pPath}`);
     if (fs.existsSync(pPath)) {
+        console.log(`DEBUG: Found player file at: ${pPath}`);
         try {
             const data = JSON.parse(fs.readFileSync(pPath));
+            console.log(`DEBUG: Successfully loaded player '${username}'`);
             return sanitizePlayer(data);
         } catch (e) {
             console.error(`Error loading player ${username}:`, e);
             return null;
         }
     }
+    console.log(`DEBUG: No player file found at: ${pPath}`);
     return null;
 }
 
