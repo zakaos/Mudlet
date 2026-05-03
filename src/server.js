@@ -155,6 +155,8 @@ function savePlayer(player) {
     const cleanData = sanitizePlayer(data);
     
     const pPath = path.join(__dirname, '..', 'data', 'players', `${player.username}.json`);
+    const pDir = path.dirname(pPath);
+    if (!fs.existsSync(pDir)) fs.mkdirSync(pDir, { recursive: true });
     fs.writeFileSync(pPath, JSON.stringify(cleanData, null, 2));
 }
 
