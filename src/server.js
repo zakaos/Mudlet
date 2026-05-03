@@ -167,7 +167,7 @@ function savePlayer(player) {
 function loadData() {
     loadBans();
     ['rooms', 'items', 'mobs', 'quests'].forEach(type => {
-        const dir = path.join(CONFIG.DATA_DIR, type);
+        const dir = path.join(CONFIG.GAME_DATA_DIR, type);
         if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
         fs.readdirSync(dir).forEach(file => {
             if (file.endsWith('.json')) {
