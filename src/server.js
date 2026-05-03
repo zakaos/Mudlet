@@ -540,7 +540,9 @@ wss.on('connection', (ws) => {
                 commands.sendTo(ws, `Choose discipline: {C}${Object.keys(CONFIG.CLASSES).join(', ')}{x}`);
             } else if (state === 'CHOOSE_CLASS') {
                 const choice = input.toLowerCase().trim();
+                console.log(`DEBUG: User '${tempUser}' selected class: '${choice}'`);
                 if (CONFIG.CLASSES[choice]) {
+                    console.log(`DEBUG: Class '${choice}' exists.`);
                     const classData = CONFIG.CLASSES[choice];
                     let p = {
                         username: tempUser, password: ws.tempPass, class: choice, level: 1, exp: 0, gold: 100, tp: 0,
@@ -557,7 +559,10 @@ wss.on('connection', (ws) => {
                     commands.sendTo(ws, `Your Stats: INT:${p.intellect}, SPD:${p.speed}, CRE:${p.creativity}, END:${p.endurance}`);
                     commands.handleLook(ws, rooms[p.roomId], players, itemTemplates, activeMobs, activeCorpses);
                     commands.sendPrompt(ws, p);
-                } else { commands.sendTo(ws, "Invalid discipline. Choose: " + Object.keys(CONFIG.CLASSES).join(', ')); }
+                } else { 
+                    console.log(`DEBUG: Class '${choice}' does not exist.`);
+                    commands.sendTo(ws, "Invalid discipline. Choose: " + Object.keys(CONFIG.CLASSES).join(', ')); 
+                }
             } else if (state === 'PLAYING') {
                 const parts = input.split(' ');
                 const cmd = parts[0].toLowerCase();
