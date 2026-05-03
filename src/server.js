@@ -26,7 +26,7 @@ let bans = [];
 
 // --- HELPERS ---
 function loadBans() {
-    const bPath = path.join(__dirname, '..', 'data', 'bans.json');
+    const bPath = path.join(CONFIG.DATA_DIR, 'bans.json');
     if (fs.existsSync(bPath)) {
         try {
             bans = JSON.parse(fs.readFileSync(bPath));
@@ -38,7 +38,7 @@ function loadBans() {
 }
 
 function saveBans() {
-    const bPath = path.join(__dirname, '..', 'data', 'bans.json');
+    const bPath = path.join(CONFIG.DATA_DIR, 'bans.json');
     fs.writeFileSync(bPath, JSON.stringify(bans, null, 2));
 }
 
@@ -55,12 +55,12 @@ function saveWorldState() {
             state.roomItems[roomId] = rooms[roomId].items;
         }
     });
-    const wPath = path.join(__dirname, '..', 'data', 'world_state.json');
+    const wPath = path.join(CONFIG.DATA_DIR, 'world_state.json');
     fs.writeFileSync(wPath, JSON.stringify(state, null, 2));
 }
 
 function loadWorldState() {
-    const wPath = path.join(__dirname, '..', 'data', 'world_state.json');
+    const wPath = path.join(CONFIG.DATA_DIR, 'world_state.json');
     if (fs.existsSync(wPath)) {
         try {
             const state = JSON.parse(fs.readFileSync(wPath));
@@ -132,7 +132,7 @@ function sanitizePlayer(player) {
 }
 
 async function loadPlayer(username) {
-    const pPath = path.join(__dirname, '..', 'data', 'players', `${username}.json`);
+    const pPath = path.join(CONFIG.DATA_DIR, 'players', `${username}.json`);
     if (fs.existsSync(pPath)) {
         try {
             const data = JSON.parse(fs.readFileSync(pPath));
@@ -154,7 +154,7 @@ function savePlayer(player) {
     // and keep the file clean.
     const cleanData = sanitizePlayer(data);
     
-    const pPath = path.join(__dirname, '..', 'data', 'players', `${player.username}.json`);
+    const pPath = path.join(CONFIG.DATA_DIR, 'players', `${player.username}.json`);
     const pDir = path.dirname(pPath);
     if (!fs.existsSync(pDir)) fs.mkdirSync(pDir, { recursive: true });
     fs.writeFileSync(pPath, JSON.stringify(cleanData, null, 2));
@@ -164,7 +164,7 @@ function savePlayer(player) {
 function loadData() {
     loadBans();
     ['rooms', 'items', 'mobs', 'quests'].forEach(type => {
-        const dir = path.join(__dirname, '..', 'data', type);
+        const dir = path.join(CONFIG.DATA_DIR, type);
         if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
         fs.readdirSync(dir).forEach(file => {
             if (file.endsWith('.json')) {

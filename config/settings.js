@@ -1,6 +1,10 @@
+const path = require('path');
+
 module.exports = {
     PORT: process.env.PORT || 3000,
+    DATA_DIR: process.env.DATA_DIR || path.join(__dirname, '..', 'data'),
     MOTD: "{bold}{C}--- WELCOME TO MUDLET: WHERE DEVELOPERS DWELL ---{x}\n{Y}Version 1.0.0{x}\n{G}Remember to 'look' around and 'talk' to NPCs for quests!{x}",
+
     STARTING_ROOM: 'entry',
     ADMINS: process.env.ADMIN_LIST ? process.env.ADMIN_LIST.split(',') : [],
     
