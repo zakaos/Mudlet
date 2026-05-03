@@ -58,12 +58,12 @@ function saveWorldState() {
             state.roomItems[roomId] = rooms[roomId].items;
         }
     });
-    const wPath = path.join(CONFIG.DATA_DIR, 'world_state.json');
+    const wPath = path.join(CONFIG.GAME_DATA_DIR, 'world_state.json');
     fs.writeFileSync(wPath, JSON.stringify(state, null, 2));
 }
 
 function loadWorldState() {
-    const wPath = path.join(CONFIG.DATA_DIR, 'world_state.json');
+    const wPath = path.join(CONFIG.GAME_DATA_DIR, 'world_state.json');
     if (fs.existsSync(wPath)) {
         try {
             const state = JSON.parse(fs.readFileSync(wPath));
