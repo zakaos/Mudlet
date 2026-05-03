@@ -11,6 +11,8 @@ const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
 const CONFIG = require('../config/settings');
+console.log("DEBUG: CONFIG loaded:", CONFIG ? "YES" : "NO");
+console.log("DEBUG: CONFIG.GAME_DATA_DIR:", CONFIG.GAME_DATA_DIR);
 const commands = require('./commands');
 const PORT = CONFIG.PORT;
 
@@ -26,7 +28,8 @@ let bans = [];
 
 // --- HELPERS ---
 function loadBans() {
-    const bPath = path.join(CONFIG.DATA_DIR, 'bans.json');
+    console.log("DEBUG: loadBans called, GAME_DATA_DIR is:", CONFIG.GAME_DATA_DIR);
+    const bPath = path.join(CONFIG.GAME_DATA_DIR, 'bans.json');
     if (fs.existsSync(bPath)) {
         try {
             bans = JSON.parse(fs.readFileSync(bPath));
