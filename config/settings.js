@@ -4,7 +4,7 @@ module.exports = {
     PORT: process.env.PORT || 3000,
     GAME_DATA_DIR: path.join(__dirname, '..', 'data'),
     PLAYER_DATA_DIR: process.env.PLAYER_DATA_DIR || path.join(__dirname, '..', 'data', 'players'),
-    MOTD: "{bold}{C}--- WELCOME TO MUDLET: WHERE DEVELOPERS DWELL ---{x}\n{Y}Version 1.0.0{x}\n{G}Remember to 'look' around and 'talk' to NPCs for quests!{x}",
+    MOTD: "{bold}{C}--- WELCOME TO MUDLET: WHERE DEVELOPERS DWELL ---{x}\n{Y}Version 1.0.1{x}\n{G}Remember to 'look' around and 'talk' to NPCs for quests!{x}",
 
 
     STARTING_ROOM: 'entry',
