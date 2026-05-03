@@ -2,8 +2,10 @@ const path = require('path');
 
 module.exports = {
     PORT: process.env.PORT || 3000,
-    DATA_DIR: process.env.DATA_DIR || path.join(__dirname, '..', 'data'),
+    GAME_DATA_DIR: path.join(__dirname, '..', 'data'),
+    PLAYER_DATA_DIR: process.env.PLAYER_DATA_DIR || path.join(__dirname, '..', 'data', 'players'),
     MOTD: "{bold}{C}--- WELCOME TO MUDLET: WHERE DEVELOPERS DWELL ---{x}\n{Y}Version 1.0.0{x}\n{G}Remember to 'look' around and 'talk' to NPCs for quests!{x}",
+
 
     STARTING_ROOM: 'entry',
     ADMINS: process.env.ADMIN_LIST ? process.env.ADMIN_LIST.split(',') : [],
