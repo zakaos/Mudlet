@@ -135,7 +135,7 @@ function sanitizePlayer(player) {
 }
 
 async function loadPlayer(username) {
-    const pPath = path.join(CONFIG.DATA_DIR, 'players', `${username}.json`);
+    const pPath = path.join(CONFIG.PLAYER_DATA_DIR, `${username}.json`);
     if (fs.existsSync(pPath)) {
         try {
             const data = JSON.parse(fs.readFileSync(pPath));
@@ -157,7 +157,7 @@ function savePlayer(player) {
     // and keep the file clean.
     const cleanData = sanitizePlayer(data);
     
-    const pPath = path.join(CONFIG.DATA_DIR, 'players', `${player.username}.json`);
+    const pPath = path.join(CONFIG.PLAYER_DATA_DIR, `${player.username}.json`);
     const pDir = path.dirname(pPath);
     if (!fs.existsSync(pDir)) fs.mkdirSync(pDir, { recursive: true });
     fs.writeFileSync(pPath, JSON.stringify(cleanData, null, 2));
